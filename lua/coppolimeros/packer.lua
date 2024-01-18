@@ -66,4 +66,6 @@ return require('packer').startup(function(use)
       end
   }
 
+  use {'theprimeagen/vim-be-good'}
+
 end)
