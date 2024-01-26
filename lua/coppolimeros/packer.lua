@@ -66,4 +66,11 @@ return require('packer').startup(function(use)
       end
   }
 
+  use {
+      'tjdevries/ocaml.nvim',
+      config = function()
+          require("ocaml").update()
+      end
+  }
+
 end)
