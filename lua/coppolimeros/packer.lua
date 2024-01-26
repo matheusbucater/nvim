@@ -66,11 +66,15 @@ return require('packer').startup(function(use)
       end
   }
 
+<<<<<<< HEAD
   use {
       'tjdevries/ocaml.nvim',
       config = function()
           require("ocaml").update()
       end
   }
+=======
+  use {'theprimeagen/vim-be-good'}
+>>>>>>> refs/remotes/origin/main
 
 end)
