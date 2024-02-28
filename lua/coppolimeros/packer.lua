@@ -74,6 +74,6 @@ return require('packer').startup(function(use)
   }
   use {'theprimeagen/vim-be-good'}
 
-  use {'github/copilot.vim'}
+  use {'exafunction/codeium.vim'}
 
 end)
