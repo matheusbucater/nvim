@@ -2,6 +2,7 @@ local lsp = require('lsp-zero')
 
 lsp.preset("recommended")
 
+require'lspconfig'.hls.setup{}
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	ensure_installed = {
@@ -9,12 +10,12 @@ require('mason-lspconfig').setup({
 		'quick_lint_js',
 		'lua_ls',
 		'rust_analyzer',
+        'hls',
 	},
 	handlers = {
 		lsp.default_setup,
 	},
 })
-
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
